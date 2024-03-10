@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.view.homepage.studentHomepage.StudentHomepageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="222dp"
+            android:layout_height="173dp"
+            android:src="@drawable/transparentlogo"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/create_a_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/create_a_quiz"
+            android:textSize="24sp"
+            app:backgroundTint="#B50606" />
+
+        <Button
+            android:id="@+id/create_a_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/create_a_course"
+            android:textColorLink="#DFEF3B3B"
+            android:textSize="24sp"
+            app:backgroundTint="#FF9800" />
+
+        <Button
+            android:id="@+id/add_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/add_questions"
+            android:textColorLink="#DFEF3B3B"
+            android:textSize="24sp"
+            app:backgroundTint="#009688" />
+
+        <Button
+            android:id="@+id/my_courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/my_courses"
+            android:textColorLink="#DFEF3B3B"
+            android:textSize="24sp"
+            app:backgroundTint="#0C6D63" />
+
+        <Button
+            android:id="@+id/my_students_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/my_students_results"
+            android:textColorLink="#DFEF3B3B"
+            android:textSize="24sp"
+            app:backgroundTint="#0B2A75" />
+
+        <Button
+            android:id="@+id/my_quizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/my_quizes"
+            android:textColorLink="#DFEF3B3B"
+            android:textSize="24sp"
+            app:backgroundTint="#9C27B0" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/exit"
+            android:textSize="24sp"
+            app:backgroundTint="#572E8A" />
+    </LinearLayout>
+</ScrollView>

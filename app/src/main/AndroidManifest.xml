@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.learningapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LearningApp">
+        <activity android:name="com.example.view.checkResults.checkTeacherResults.CheckTeacherResultsActivity"></activity>
+        <activity android:name="com.example.view.editQuizes.EditQuizesActivity" />
+        <activity android:name="com.example.view.question.addQuestions.AddQuestionsActivity" />
+        <activity android:name="com.example.view.course.courseCreation.CreateCourseActivity" />
+        <activity android:name="com.example.view.quiz.quizCreation.CreateQuizActivity" />
+        <activity android:name="com.example.view.checkCourses.checkTeacherCourses.CheckTeacherCoursesActivity" />
+        <activity android:name="com.example.view.question.checkStudentSavedQuestions.CheckStudentSavedQuestionsActivity" />
+        <activity android:name="com.example.view.checkResults.checkStudentResults.CheckStudentResultsActivity" />
+        <activity android:name="com.example.view.checkCourses.checkStudentCourses.CheckStudentCoursesActivity" />
+        <activity android:name="com.example.view.course.courseRegistration.CourseRegistrationActivity" />
+        <activity android:name="com.example.view.quiz.quizParticipation.QuizParticipationActivity" />
+        <activity android:name="com.example.view.homepage.teacherHomepage.TeacherHomepageActivity" />
+        <activity android:name="com.example.view.homepage.studentHomepage.StudentHomepageActivity" />
+        <activity android:name="com.example.view.signup.signupStudent.SignUpStudentActivity" />
+        <activity android:name="com.example.view.signup.signupTeacher.SignUpTeacherActivity" />
+        <activity android:name="com.example.view.signup.SignUpActivity" />
+        <activity android:name="com.example.view.login.LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

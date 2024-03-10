@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.view.question.addQuestions.AddQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/chooseDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/description" />
+
+        <EditText
+            android:textSize="22sp"
+            android:id="@+id/editQuestionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:inputType = "textMultiLine"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/questionDescription"
+            />
+
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/chooseDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/chooseDifficulty" />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/radioGroupDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+                <RadioButton
+                    android:id="@+id/radioBtnEasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:onClick="checkLevelButton"
+                    android:text="@string/easy" />
+
+            <RadioButton
+                android:id="@+id/radioBtnMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="checkLevelButton"
+                android:text="@string/medium" />
+
+            <RadioButton
+                android:id="@+id/radioBtnHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="checkLevelButton"
+                android:text="@string/hard" />
+        </RadioGroup>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/chooseType" />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/radioGroupType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/trueIsCorrect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="checkTypeButton"
+                android:text="@string/trueAnswer"/>
+
+            <RadioButton
+                android:id="@+id/falseIsCorrect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="checkTypeButton"
+                android:text="@string/falseAnswer" />
+
+            <RadioButton
+                android:id="@+id/multipleChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:checked="true"
+                android:onClick="checkTypeButton"
+                android:text="@string/multipleChoice" />
+        </RadioGroup>
+        <EditText
+            android:textSize="22sp"
+            android:id="@+id/editCorrectAnswerDesription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="@string/correctAnswerDescription"
+            />
+
+        <EditText
+            android:textSize="22sp"
+            android:id="@+id/editFalseAnswer1Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="@string/falseAnswerDescription1"
+            />
+
+        <EditText
+            android:textSize="22sp"
+            android:id="@+id/editFalseAnswer2Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="@string/falseAnswerDescription2"
+            />
+
+        <EditText
+            android:textSize="22sp"
+            android:id="@+id/editFalseAnswer3Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="@string/falseAnswerDescription3"
+            />
+
+        <Button
+            android:id="@+id/addQuestionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/submitQuestion">
+        </Button>
+    </LinearLayout>
+</ScrollView>
